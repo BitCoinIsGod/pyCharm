@@ -1,9 +1,12 @@
 import sys
 from PyQt5.QtWidgets import *
 
-app = QApplication(sys.argv)
+class MyWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
 
-btn = QPushButton("Hello")    # 버튼 객체 생성
-btn.show()
- def
-app.exec_()                          # 이벤트 루프 생성
+
+app = QApplication(sys.argv)
+window = MyWindow()
+window.show()
+app.exec_()
